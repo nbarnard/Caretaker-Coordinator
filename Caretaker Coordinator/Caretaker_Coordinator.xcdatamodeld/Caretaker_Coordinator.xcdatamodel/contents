@@ -1,4 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C1021" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Caregiver" syncable="YES">
+        <relationship name="patients" optional="YES" toMany="YES" minCount="1" deletionRule="Nullify" destinationEntity="Patient" inverseName="caregivers" inverseEntity="Patient" syncable="YES"/>
+    </entity>
+    <entity name="Dosed" syncable="YES">
+        <attribute name="doesdQuantity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="dosedTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dosedUnit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="givenByCaregiver" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Caregiver" syncable="YES"/>
+        <relationship name="medicine" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Medicine" inverseName="dosed" inverseEntity="Medicine" syncable="YES"/>
+    </entity>
+    <entity name="Medicine" syncable="YES">
+        <attribute name="doesFrequencySeconds" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="doseQuantity" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="doseUnit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="dosed" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Dosed" inverseName="medicine" inverseEntity="Dosed" syncable="YES"/>
+        <relationship name="patient" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Patient" inverseName="medicines" inverseEntity="Patient" syncable="YES"/>
+    </entity>
+    <entity name="Patient" syncable="YES">
+        <relationship name="caregivers" optional="YES" toMany="YES" minCount="1" deletionRule="Nullify" destinationEntity="Caregiver" inverseName="patients" inverseEntity="Caregiver" syncable="YES"/>
+        <relationship name="medicines" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Medicine" inverseName="patient" inverseEntity="Medicine" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Caregiver" positionX="-2871" positionY="-2205" width="117" height="58"/>
+        <element name="Patient" positionX="-3015" positionY="-1999" width="128" height="73"/>
+        <element name="Medicine" positionX="-2693" positionY="-2223" width="128" height="118"/>
+        <element name="Dosed" positionX="-2682" positionY="-2007" width="128" height="118"/>
+    </elements>
 </model>
