@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		114B0C68191B5B2B00155104 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114B0C67191B5B2B00155104 /* Foundation.framework */; };
+		114B0C6A191B5B2B00155104 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114B0C69191B5B2B00155104 /* CoreGraphics.framework */; };
+		114B0C6C191B5B2B00155104 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114B0C6B191B5B2B00155104 /* UIKit.framework */; };
+		114B0C6E191B5B2B00155104 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114B0C6D191B5B2B00155104 /* CoreData.framework */; };
+		114B0C74191B5B2B00155104 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 114B0C72191B5B2B00155104 /* InfoPlist.strings */; };
+		114B0C76191B5B2B00155104 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 114B0C75191B5B2B00155104 /* main.m */; };
+		114B0C7A191B5B2B00155104 /* NCBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 114B0C79191B5B2B00155104 /* NCBAppDelegate.m */; };
+		114B0C7D191B5B2B00155104 /* Caretaker_Coordinator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 114B0C7B191B5B2B00155104 /* Caretaker_Coordinator.xcdatamodeld */; };
+		114B0C7F191B5B2B00155104 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114B0C7E191B5B2B00155104 /* Images.xcassets */; };
+		114B0C86191B5B2B00155104 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114B0C85191B5B2B00155104 /* XCTest.framework */; };
+		114B0C87191B5B2B00155104 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114B0C67191B5B2B00155104 /* Foundation.framework */; };
+		114B0C88191B5B2B00155104 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114B0C6B191B5B2B00155104 /* UIKit.framework */; };
+		114B0C89191B5B2B00155104 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114B0C6D191B5B2B00155104 /* CoreData.framework */; };
+		114B0C91191B5B2B00155104 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 114B0C8F191B5B2B00155104 /* InfoPlist.strings */; };
+		114B0C93191B5B2B00155104 /* Caretaker_CoordinatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 114B0C92191B5B2B00155104 /* Caretaker_CoordinatorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		114B0C8A191B5B2B00155104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 114B0C5C191B5B2B00155104 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 114B0C63191B5B2B00155104;
+			remoteInfo = "Caretaker Coordinator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		114B0C64191B5B2B00155104 /* Caretaker Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caretaker Coordinator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		114B0C67191B5B2B00155104 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		114B0C69191B5B2B00155104 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		114B0C6B191B5B2B00155104 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		114B0C6D191B5B2B00155104 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		114B0C71191B5B2B00155104 /* Caretaker Coordinator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Caretaker Coordinator-Info.plist"; sourceTree = "<group>"; };
+		114B0C73191B5B2B00155104 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		114B0C75191B5B2B00155104 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		114B0C77191B5B2B00155104 /* Caretaker Coordinator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Caretaker Coordinator-Prefix.pch"; sourceTree = "<group>"; };
+		114B0C78191B5B2B00155104 /* NCBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCBAppDelegate.h; sourceTree = "<group>"; };
+		114B0C79191B5B2B00155104 /* NCBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCBAppDelegate.m; sourceTree = "<group>"; };
+		114B0C7C191B5B2B00155104 /* Caretaker_Coordinator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Caretaker_Coordinator.xcdatamodel; sourceTree = "<group>"; };
+		114B0C7E191B5B2B00155104 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		114B0C84191B5B2B00155104 /* Caretaker CoordinatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Caretaker CoordinatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		114B0C85191B5B2B00155104 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		114B0C8E191B5B2B00155104 /* Caretaker CoordinatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Caretaker CoordinatorTests-Info.plist"; sourceTree = "<group>"; };
+		114B0C90191B5B2B00155104 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		114B0C92191B5B2B00155104 /* Caretaker_CoordinatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Caretaker_CoordinatorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		114B0C61191B5B2B00155104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				114B0C6A191B5B2B00155104 /* CoreGraphics.framework in Frameworks */,
+				114B0C6E191B5B2B00155104 /* CoreData.framework in Frameworks */,
+				114B0C6C191B5B2B00155104 /* UIKit.framework in Frameworks */,
+				114B0C68191B5B2B00155104 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		114B0C81191B5B2B00155104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				114B0C86191B5B2B00155104 /* XCTest.framework in Frameworks */,
+				114B0C89191B5B2B00155104 /* CoreData.framework in Frameworks */,
+				114B0C88191B5B2B00155104 /* UIKit.framework in Frameworks */,
+				114B0C87191B5B2B00155104 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		114B0C5B191B5B2B00155104 = {
+			isa = PBXGroup;
+			children = (
+				114B0C6F191B5B2B00155104 /* Caretaker Coordinator */,
+				114B0C8C191B5B2B00155104 /* Caretaker CoordinatorTests */,
+				114B0C66191B5B2B00155104 /* Frameworks */,
+				114B0C65191B5B2B00155104 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		114B0C65191B5B2B00155104 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				114B0C64191B5B2B00155104 /* Caretaker Coordinator.app */,
+				114B0C84191B5B2B00155104 /* Caretaker CoordinatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		114B0C66191B5B2B00155104 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				114B0C67191B5B2B00155104 /* Foundation.framework */,
+				114B0C69191B5B2B00155104 /* CoreGraphics.framework */,
+				114B0C6B191B5B2B00155104 /* UIKit.framework */,
+				114B0C6D191B5B2B00155104 /* CoreData.framework */,
+				114B0C85191B5B2B00155104 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		114B0C6F191B5B2B00155104 /* Caretaker Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				114B0C78191B5B2B00155104 /* NCBAppDelegate.h */,
+				114B0C79191B5B2B00155104 /* NCBAppDelegate.m */,
+				114B0C7E191B5B2B00155104 /* Images.xcassets */,
+				114B0C7B191B5B2B00155104 /* Caretaker_Coordinator.xcdatamodeld */,
+				114B0C70191B5B2B00155104 /* Supporting Files */,
+			);
+			path = "Caretaker Coordinator";
+			sourceTree = "<group>";
+		};
+		114B0C70191B5B2B00155104 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				114B0C71191B5B2B00155104 /* Caretaker Coordinator-Info.plist */,
+				114B0C72191B5B2B00155104 /* InfoPlist.strings */,
+				114B0C75191B5B2B00155104 /* main.m */,
+				114B0C77191B5B2B00155104 /* Caretaker Coordinator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		114B0C8C191B5B2B00155104 /* Caretaker CoordinatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				114B0C92191B5B2B00155104 /* Caretaker_CoordinatorTests.m */,
+				114B0C8D191B5B2B00155104 /* Supporting Files */,
+			);
+			path = "Caretaker CoordinatorTests";
+			sourceTree = "<group>";
+		};
+		114B0C8D191B5B2B00155104 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				114B0C8E191B5B2B00155104 /* Caretaker CoordinatorTests-Info.plist */,
+				114B0C8F191B5B2B00155104 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		114B0C63191B5B2B00155104 /* Caretaker Coordinator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 114B0C96191B5B2B00155104 /* Build configuration list for PBXNativeTarget "Caretaker Coordinator" */;
+			buildPhases = (
+				114B0C60191B5B2B00155104 /* Sources */,
+				114B0C61191B5B2B00155104 /* Frameworks */,
+				114B0C62191B5B2B00155104 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Caretaker Coordinator";
+			productName = "Caretaker Coordinator";
+			productReference = 114B0C64191B5B2B00155104 /* Caretaker Coordinator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		114B0C83191B5B2B00155104 /* Caretaker CoordinatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 114B0C99191B5B2B00155104 /* Build configuration list for PBXNativeTarget "Caretaker CoordinatorTests" */;
+			buildPhases = (
+				114B0C80191B5B2B00155104 /* Sources */,
+				114B0C81191B5B2B00155104 /* Frameworks */,
+				114B0C82191B5B2B00155104 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				114B0C8B191B5B2B00155104 /* PBXTargetDependency */,
+			);
+			name = "Caretaker CoordinatorTests";
+			productName = "Caretaker CoordinatorTests";
+			productReference = 114B0C84191B5B2B00155104 /* Caretaker CoordinatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		114B0C5C191B5B2B00155104 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NCB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "NMFF Development";
+				TargetAttributes = {
+					114B0C83191B5B2B00155104 = {
+						TestTargetID = 114B0C63191B5B2B00155104;
+					};
+				};
+			};
+			buildConfigurationList = 114B0C5F191B5B2B00155104 /* Build configuration list for PBXProject "Caretaker Coordinator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 114B0C5B191B5B2B00155104;
+			productRefGroup = 114B0C65191B5B2B00155104 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				114B0C63191B5B2B00155104 /* Caretaker Coordinator */,
+				114B0C83191B5B2B00155104 /* Caretaker CoordinatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		114B0C62191B5B2B00155104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				114B0C74191B5B2B00155104 /* InfoPlist.strings in Resources */,
+				114B0C7F191B5B2B00155104 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		114B0C82191B5B2B00155104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				114B0C91191B5B2B00155104 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		114B0C60191B5B2B00155104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				114B0C7A191B5B2B00155104 /* NCBAppDelegate.m in Sources */,
+				114B0C7D191B5B2B00155104 /* Caretaker_Coordinator.xcdatamodeld in Sources */,
+				114B0C76191B5B2B00155104 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		114B0C80191B5B2B00155104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				114B0C93191B5B2B00155104 /* Caretaker_CoordinatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		114B0C8B191B5B2B00155104 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 114B0C63191B5B2B00155104 /* Caretaker Coordinator */;
+			targetProxy = 114B0C8A191B5B2B00155104 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		114B0C72191B5B2B00155104 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				114B0C73191B5B2B00155104 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		114B0C8F191B5B2B00155104 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				114B0C90191B5B2B00155104 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		114B0C94191B5B2B00155104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		114B0C95191B5B2B00155104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		114B0C97191B5B2B00155104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Caretaker Coordinator/Caretaker Coordinator-Prefix.pch";
+				INFOPLIST_FILE = "Caretaker Coordinator/Caretaker Coordinator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		114B0C98191B5B2B00155104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Caretaker Coordinator/Caretaker Coordinator-Prefix.pch";
+				INFOPLIST_FILE = "Caretaker Coordinator/Caretaker Coordinator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		114B0C9A191B5B2B00155104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Caretaker Coordinator.app/Caretaker Coordinator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Caretaker Coordinator/Caretaker Coordinator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Caretaker CoordinatorTests/Caretaker CoordinatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		114B0C9B191B5B2B00155104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Caretaker Coordinator.app/Caretaker Coordinator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Caretaker Coordinator/Caretaker Coordinator-Prefix.pch";
+				INFOPLIST_FILE = "Caretaker CoordinatorTests/Caretaker CoordinatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		114B0C5F191B5B2B00155104 /* Build configuration list for PBXProject "Caretaker Coordinator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114B0C94191B5B2B00155104 /* Debug */,
+				114B0C95191B5B2B00155104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		114B0C96191B5B2B00155104 /* Build configuration list for PBXNativeTarget "Caretaker Coordinator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114B0C97191B5B2B00155104 /* Debug */,
+				114B0C98191B5B2B00155104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		114B0C99191B5B2B00155104 /* Build configuration list for PBXNativeTarget "Caretaker CoordinatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114B0C9A191B5B2B00155104 /* Debug */,
+				114B0C9B191B5B2B00155104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		114B0C7B191B5B2B00155104 /* Caretaker_Coordinator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				114B0C7C191B5B2B00155104 /* Caretaker_Coordinator.xcdatamodel */,
+			);
+			currentVersion = 114B0C7C191B5B2B00155104 /* Caretaker_Coordinator.xcdatamodel */;
+			path = Caretaker_Coordinator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 114B0C5C191B5B2B00155104 /* Project object */;
+}
