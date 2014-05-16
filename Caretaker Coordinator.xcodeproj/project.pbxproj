@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		11CF9B3B1925F06B00D5A222 /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 11CF9B3C1925F06B00D5A222 /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				11CF9B3F1925F07D00D5A222 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		114B0C68191B5B2B00155104 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114B0C67191B5B2B00155104 /* Foundation.framework */; };
 		114B0C6A191B5B2B00155104 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114B0C69191B5B2B00155104 /* CoreGraphics.framework */; };
@@ -22,6 +36,14 @@
 		114B0C89191B5B2B00155104 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114B0C6D191B5B2B00155104 /* CoreData.framework */; };
 		114B0C91191B5B2B00155104 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 114B0C8F191B5B2B00155104 /* InfoPlist.strings */; };
 		114B0C93191B5B2B00155104 /* Caretaker_CoordinatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 114B0C92191B5B2B00155104 /* Caretaker_CoordinatorTests.m */; };
+		11CF9B4B1925F17B00D5A222 /* _Caregiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CF9B411925F17B00D5A222 /* _Caregiver.m */; };
+		11CF9B4C1925F17B00D5A222 /* _Dosed.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CF9B431925F17B00D5A222 /* _Dosed.m */; };
+		11CF9B4D1925F17B00D5A222 /* _Medicine.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CF9B451925F17B00D5A222 /* _Medicine.m */; };
+		11CF9B4E1925F17B00D5A222 /* _Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CF9B471925F17B00D5A222 /* _Patient.m */; };
+		11CF9B4F1925F17B00D5A222 /* Caregiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CF9B491925F17B00D5A222 /* Caregiver.m */; };
+		11CF9B551925F19C00D5A222 /* Dosed.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CF9B501925F19C00D5A222 /* Dosed.m */; };
+		11CF9B561925F19C00D5A222 /* Medicine.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CF9B521925F19C00D5A222 /* Medicine.m */; };
+		11CF9B571925F19C00D5A222 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CF9B541925F19C00D5A222 /* Patient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +75,23 @@
 		114B0C8E191B5B2B00155104 /* Caretaker CoordinatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Caretaker CoordinatorTests-Info.plist"; sourceTree = "<group>"; };
 		114B0C90191B5B2B00155104 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		114B0C92191B5B2B00155104 /* Caretaker_CoordinatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Caretaker_CoordinatorTests.m; sourceTree = "<group>"; };
+		11CF9B401925F17B00D5A222 /* _Caregiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Caregiver.h; sourceTree = "<group>"; };
+		11CF9B411925F17B00D5A222 /* _Caregiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Caregiver.m; sourceTree = "<group>"; };
+		11CF9B421925F17B00D5A222 /* _Dosed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Dosed.h; sourceTree = "<group>"; };
+		11CF9B431925F17B00D5A222 /* _Dosed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Dosed.m; sourceTree = "<group>"; };
+		11CF9B441925F17B00D5A222 /* _Medicine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Medicine.h; sourceTree = "<group>"; };
+		11CF9B451925F17B00D5A222 /* _Medicine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Medicine.m; sourceTree = "<group>"; };
+		11CF9B461925F17B00D5A222 /* _Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Patient.h; sourceTree = "<group>"; };
+		11CF9B471925F17B00D5A222 /* _Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Patient.m; sourceTree = "<group>"; };
+		11CF9B481925F17B00D5A222 /* Caregiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Caregiver.h; sourceTree = "<group>"; };
+		11CF9B491925F17B00D5A222 /* Caregiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Caregiver.m; sourceTree = "<group>"; };
+		11CF9B4A1925F17B00D5A222 /* Dosed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dosed.h; sourceTree = "<group>"; };
+		11CF9B501925F19C00D5A222 /* Dosed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dosed.m; sourceTree = "<group>"; };
+		11CF9B511925F19C00D5A222 /* Medicine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medicine.h; sourceTree = "<group>"; };
+		11CF9B521925F19C00D5A222 /* Medicine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medicine.m; sourceTree = "<group>"; };
+		11CF9B531925F19C00D5A222 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		11CF9B541925F19C00D5A222 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		11CF9B591925F1FF00D5A222 /* CaretakerCoordinatorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaretakerCoordinatorModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +158,7 @@
 				114B0C79191B5B2B00155104 /* NCBAppDelegate.m */,
 				114B0C7E191B5B2B00155104 /* Images.xcassets */,
 				114B0C7B191B5B2B00155104 /* Caretaker_Coordinator.xcdatamodeld */,
+				11CF9B581925F1B400D5A222 /* Model */,
 				114B0C70191B5B2B00155104 /* Supporting Files */,
 			);
 			path = "Caretaker Coordinator";
@@ -151,6 +191,30 @@
 				114B0C8F191B5B2B00155104 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11CF9B581925F1B400D5A222 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11CF9B591925F1FF00D5A222 /* CaretakerCoordinatorModel.h */,
+				11CF9B4A1925F17B00D5A222 /* Dosed.h */,
+				11CF9B501925F19C00D5A222 /* Dosed.m */,
+				11CF9B511925F19C00D5A222 /* Medicine.h */,
+				11CF9B521925F19C00D5A222 /* Medicine.m */,
+				11CF9B531925F19C00D5A222 /* Patient.h */,
+				11CF9B541925F19C00D5A222 /* Patient.m */,
+				11CF9B481925F17B00D5A222 /* Caregiver.h */,
+				11CF9B491925F17B00D5A222 /* Caregiver.m */,
+				11CF9B401925F17B00D5A222 /* _Caregiver.h */,
+				11CF9B411925F17B00D5A222 /* _Caregiver.m */,
+				11CF9B421925F17B00D5A222 /* _Dosed.h */,
+				11CF9B431925F17B00D5A222 /* _Dosed.m */,
+				11CF9B441925F17B00D5A222 /* _Medicine.h */,
+				11CF9B451925F17B00D5A222 /* _Medicine.m */,
+				11CF9B461925F17B00D5A222 /* _Patient.h */,
+				11CF9B471925F17B00D5A222 /* _Patient.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +284,7 @@
 			targets = (
 				114B0C63191B5B2B00155104 /* Caretaker Coordinator */,
 				114B0C83191B5B2B00155104 /* Caretaker CoordinatorTests */,
+				11CF9B3B1925F06B00D5A222 /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -244,13 +309,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11CF9B3F1925F07D00D5A222 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mogenerator -m Caretaker\\ Coordinator/Caretaker_Coordinator.xcdatamodeld/Caretaker_Coordinator.xcdatamodel -O Caretaker\\ Coordinator --template-var arc=true";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		114B0C60191B5B2B00155104 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				114B0C7A191B5B2B00155104 /* NCBAppDelegate.m in Sources */,
+				11CF9B4C1925F17B00D5A222 /* _Dosed.m in Sources */,
+				11CF9B4E1925F17B00D5A222 /* _Patient.m in Sources */,
 				114B0C7D191B5B2B00155104 /* Caretaker_Coordinator.xcdatamodeld in Sources */,
+				11CF9B571925F19C00D5A222 /* Patient.m in Sources */,
+				11CF9B4D1925F17B00D5A222 /* _Medicine.m in Sources */,
+				11CF9B561925F19C00D5A222 /* Medicine.m in Sources */,
+				11CF9B4B1925F17B00D5A222 /* _Caregiver.m in Sources */,
+				11CF9B551925F19C00D5A222 /* Dosed.m in Sources */,
+				11CF9B4F1925F17B00D5A222 /* Caregiver.m in Sources */,
 				114B0C76191B5B2B00155104 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +518,20 @@
 			};
 			name = Release;
 		};
+		11CF9B3D1925F06B00D5A222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		11CF9B3E1925F06B00D5A222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -448,12 +551,22 @@
 				114B0C98191B5B2B00155104 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		114B0C99191B5B2B00155104 /* Build configuration list for PBXNativeTarget "Caretaker CoordinatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				114B0C9A191B5B2B00155104 /* Debug */,
 				114B0C9B191B5B2B00155104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11CF9B3C1925F06B00D5A222 /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11CF9B3D1925F06B00D5A222 /* Debug */,
+				11CF9B3E1925F06B00D5A222 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
