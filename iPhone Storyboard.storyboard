@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8Qo-QC-AfE">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Dose Table View Controller - Doses-->
+        <scene sceneID="yLt-bC-qEj">
+            <objects>
+                <tableViewController title="Doses" id="fXN-T2-eDP" customClass="NCBDoseTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="568" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="81" sectionHeaderHeight="22" sectionFooterHeight="22" id="9ET-pr-JhE" userLabel="Dose Table View">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="81" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DoseNeeded" id="GhA-QW-qJY" customClass="NCBDoseNeededCell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="81"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="287" placeholderIntrinsicHeight="80" tableViewCell="GhA-QW-qJY" id="XJC-uP-fP2">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="155" placeholderIntrinsicHeight="40" text="Patient Name" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="155" translatesAutoresizingMaskIntoConstraints="NO" id="XYV-ds-JY2" customClass="BNRDynamicTypeManagedLabel">
+                                            <rect key="frame" x="20" y="8" width="155" height="39"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="84" placeholderIntrinsicHeight="20" text="Time Due" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" preferredMaxLayoutWidth="84" translatesAutoresizingMaskIntoConstraints="NO" id="B4U-aH-MOi" customClass="BNRDynamicTypeManagedLabel">
+                                            <rect key="frame" x="183" y="8" width="84" height="39"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="170" placeholderIntrinsicHeight="17" text="Drug Name" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="170" translatesAutoresizingMaskIntoConstraints="NO" id="Xb8-7K-aX8" customClass="BNRDynamicTypeManagedLabel">
+                                            <rect key="frame" x="63" y="55" width="170" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="50" placeholderIntrinsicHeight="17" text="Drug Dose" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fq0-o3-6z4" customClass="BNRDynamicTypeManagedLabel">
+                                            <rect key="frame" x="237" y="55" width="50" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="22" placeholderIntrinsicHeight="22" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUW-uS-uau" customClass="BNRDynamicTypeManagedButton">
+                                            <rect key="frame" x="20" y="50" width="22" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="lUW-uS-uau" secondAttribute="height" multiplier="1:1" id="L6c-xq-E5h"/>
+                                                <constraint firstAttribute="width" constant="22" id="sfi-QT-5FT"/>
+                                            </constraints>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="fq0-o3-6z4" firstAttribute="leading" secondItem="Xb8-7K-aX8" secondAttribute="trailing" priority="751" constant="4" id="1X3-HO-HLJ" userLabel="Drug Name to Drug Dose"/>
+                                        <constraint firstAttribute="bottom" secondItem="fq0-o3-6z4" secondAttribute="bottom" constant="8" id="3Bv-CX-3Kh" userLabel="Drug Dose Bottom Space"/>
+                                        <constraint firstAttribute="bottom" secondItem="Xb8-7K-aX8" secondAttribute="bottom" constant="8" id="3DD-73-z8E" userLabel="Drug Name Bottom Space"/>
+                                        <constraint firstItem="B4U-aH-MOi" firstAttribute="leading" secondItem="XYV-ds-JY2" secondAttribute="trailing" constant="8" symbolic="YES" id="42C-ed-Nmz" userLabel="Time-Patient Space"/>
+                                        <constraint firstAttribute="trailing" secondItem="B4U-aH-MOi" secondAttribute="trailing" constant="20" symbolic="YES" id="7wA-tw-ufh" userLabel="Time Trailing Space"/>
+                                        <constraint firstItem="Xb8-7K-aX8" firstAttribute="leading" secondItem="lUW-uS-uau" secondAttribute="trailing" multiplier="1.3" priority="751" constant="8" symbolic="YES" id="Lmz-Aw-e7h" userLabel="Checkmark to Drug Name Space"/>
+                                        <constraint firstAttribute="bottom" secondItem="lUW-uS-uau" secondAttribute="bottom" constant="8" id="LtD-mX-kFw" userLabel="Checkmark to Bottom"/>
+                                        <constraint firstItem="XYV-ds-JY2" firstAttribute="leading" secondItem="XJC-uP-fP2" secondAttribute="leading" constant="20" symbolic="YES" id="PjO-bv-hwH" userLabel="Patient Name Leading Space"/>
+                                        <constraint firstItem="XYV-ds-JY2" firstAttribute="top" secondItem="XJC-uP-fP2" secondAttribute="top" constant="8" id="TaJ-oW-AWm" userLabel="Patient Name Top Space"/>
+                                        <constraint firstItem="Xb8-7K-aX8" firstAttribute="baseline" secondItem="fq0-o3-6z4" secondAttribute="baseline" id="Wrw-D6-Qqm" userLabel="Drug Name-Drug Dose Baseline"/>
+                                        <constraint firstItem="lUW-uS-uau" firstAttribute="top" secondItem="XYV-ds-JY2" secondAttribute="bottom" priority="751" constant="8" symbolic="YES" id="XpR-Bu-Jf1" userLabel="Patient Name - Checkmark Space"/>
+                                        <constraint firstItem="lUW-uS-uau" firstAttribute="bottom" secondItem="Xb8-7K-aX8" secondAttribute="bottom" priority="999" id="kaf-9m-vYz"/>
+                                        <constraint firstItem="Xb8-7K-aX8" firstAttribute="top" secondItem="XYV-ds-JY2" secondAttribute="bottom" priority="752" constant="8" symbolic="YES" id="oco-0K-9cT" userLabel="Patient Name-Drug Name Vertical Space"/>
+                                        <constraint firstItem="XYV-ds-JY2" firstAttribute="baseline" secondItem="B4U-aH-MOi" secondAttribute="baseline" id="qGF-58-mHO" userLabel="Patient Name-Time Due Baseline"/>
+                                        <constraint firstItem="B4U-aH-MOi" firstAttribute="top" secondItem="XJC-uP-fP2" secondAttribute="top" constant="8" id="uVb-JW-hBe" userLabel="Time Due Top Space"/>
+                                        <constraint firstItem="lUW-uS-uau" firstAttribute="leading" secondItem="XJC-uP-fP2" secondAttribute="leading" constant="20" symbolic="YES" id="w8k-Yb-8lN" userLabel="Checkmark Leading Space"/>
+                                        <constraint firstItem="fq0-o3-6z4" firstAttribute="top" secondItem="B4U-aH-MOi" secondAttribute="bottom" priority="752" constant="8" symbolic="YES" id="x49-Cy-KEQ" userLabel="Time Due-Drug Dose Vertical Space"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="drugCheckbox" destination="lUW-uS-uau" id="tZk-1q-VhT"/>
+                                    <outlet property="drugDoseLabel" destination="fq0-o3-6z4" id="KFf-jy-DPx"/>
+                                    <outlet property="drugLabel" destination="Xb8-7K-aX8" id="BWX-f6-dzy"/>
+                                    <outlet property="patientLabel" destination="XYV-ds-JY2" id="TlL-DD-YUi"/>
+                                    <outlet property="timeLabel" destination="B4U-aH-MOi" id="SW8-vO-vlp"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fXN-T2-eDP" id="daw-K2-38i"/>
+                            <outlet property="delegate" destination="fXN-T2-eDP" id="Yh5-4N-BCE"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Doses" id="n2T-jG-dTs"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qNo-Ur-im1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1403" y="-19"/>
+        </scene>
+        <!--Table View Controller - Patients-->
+        <scene sceneID="q2m-Ak-mdZ">
+            <objects>
+                <tableViewController title="Patients" id="0JF-Iz-1IJ" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="not-3b-VK4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="yXt-XO-2WU">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yXt-XO-2WU" id="ga6-TF-eDZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0JF-Iz-1IJ" id="dnT-ap-6QU"/>
+                            <outlet property="delegate" destination="0JF-Iz-1IJ" id="MN2-WA-SaM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Patients" id="Rsr-85-tJH"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v21-9V-J9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1401" y="747"/>
+        </scene>
+        <!--Table View Controller - Caregivers-->
+        <scene sceneID="WvW-l6-Mq0">
+            <objects>
+                <tableViewController title="Caregivers" id="hf8-33-XOf" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="sVl-uE-zlN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="GAk-nj-Avc">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GAk-nj-Avc" id="Ywa-M5-Waq">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hf8-33-XOf" id="umy-Z3-rL5"/>
+                            <outlet property="delegate" destination="hf8-33-XOf" id="qqe-3H-xwC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Caregivers" id="HI4-D8-7yO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZIX-Gn-AqF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1405" y="1509"/>
+        </scene>
+        <!--Table View Controller - Settings-->
+        <scene sceneID="eR4-Me-Djg">
+            <objects>
+                <tableViewController title="Settings" id="2xo-5W-G8f" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="sSZ-ZZ-gPk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Kbl-o5-9Gv">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kbl-o5-9Gv" id="LQt-qw-whq">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2xo-5W-G8f" id="63S-mc-O33"/>
+                            <outlet property="delegate" destination="2xo-5W-G8f" id="tNP-ZB-6LD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="pCB-JX-hC4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FIG-ST-Fju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1410" y="2294"/>
+        </scene>
+        <!--Navigation Controller - Settings-->
+        <scene sceneID="nWG-i9-nyb">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Rdv-71-Xc8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" id="157-1u-n1A"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0ca-ye-pX3">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2xo-5W-G8f" kind="relationship" relationship="rootViewController" id="aye-XL-f9N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YyV-2e-Dya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="2294"/>
+        </scene>
+        <!--Navigation Controller - Caregivers-->
+        <scene sceneID="qZE-Xn-qkW">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="7nk-AT-U1g" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Caregivers" id="6sd-Gl-maV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="I0h-dH-7MG">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hf8-33-XOf" kind="relationship" relationship="rootViewController" id="E0u-Hl-3qi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c9n-gv-0Md" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869" y="1509"/>
+        </scene>
+        <!--Navigation Controller - Patients-->
+        <scene sceneID="Lhc-XB-LlI">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="HEg-wu-agb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Patients" id="oKW-0z-XB7"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TCK-N0-9bk">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="0JF-Iz-1IJ" kind="relationship" relationship="rootViewController" id="oo9-Bu-E3e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8K-57-UsR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="867" y="747"/>
+        </scene>
+        <!--Navigation Controller - Doses-->
+        <scene sceneID="JbE-GA-dky">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Fg1-YS-By2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Doses" id="dJp-kD-5Oc"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mvp-CH-TED">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fXN-T2-eDP" kind="relationship" relationship="rootViewController" id="BG5-Fj-FRf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GRa-c8-LL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="867" y="-19"/>
+        </scene>
+        <!--Tab Bar Controller - Caregiver Coordinator-->
+        <scene sceneID="r22-2F-ABG">
+            <objects>
+                <tabBarController title="Caregiver Coordinator" automaticallyAdjustsScrollViewInsets="NO" id="8Qo-QC-AfE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="pxd-fL-bBX">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Fg1-YS-By2" kind="relationship" relationship="viewControllers" id="lEA-ch-GA4"/>
+                        <segue destination="HEg-wu-agb" kind="relationship" relationship="viewControllers" id="RqD-6o-jLJ"/>
+                        <segue destination="7nk-AT-U1g" kind="relationship" relationship="viewControllers" id="d5e-BU-AUf"/>
+                        <segue destination="Rdv-71-Xc8" kind="relationship" relationship="viewControllers" id="Tpw-qS-O6X"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NZV-Jj-Mjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="1139"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
