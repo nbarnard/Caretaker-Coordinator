@@ -78,7 +78,7 @@
     } else { // Seccond section is for given cells
         //       NCBDoseGivenCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DoseGiven" forIndexPath:indexPath];
         cell = [tableView dequeueReusableCellWithIdentifier:@"DoseNeeded" forIndexPath:indexPath]; // placeholder during dev
-        cell.patientLabel.text = @"John Jacob Jingleheimer Schmidt";
+        cell.patientLabel.text = @"John Jacob Jingleheime Schmidt";
         cell.drugLabel.text = @"Bennadryl!";
         cell.drugDoseLabel.text = @"60 mg";
         cell.timeLabel.text = @"1500";
@@ -115,7 +115,7 @@
         cell.timeLabel.text = @"1700";
 
     } else { // Seccond section is for given cells
-        cell.patientLabel.text = @"John Jacob Jingleheimer Schmidt";
+        cell.patientLabel.text = @"John Jacob Jingleheime Schmidt";
         cell.drugLabel.text = @"Bennadryl!";
         cell.drugDoseLabel.text = @"60 mg";
         cell.timeLabel.text = @"1500";
