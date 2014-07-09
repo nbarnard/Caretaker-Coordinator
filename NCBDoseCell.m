@@ -17,7 +17,7 @@
         [self.patientLabel setPreferredMaxLayoutWidth:270.0];
         [self.drugLabel setPreferredMaxLayoutWidth:170.0];
         [self.drugDoseLabel setPreferredMaxLayoutWidth:40.0];
-        [self.timeLabel setPreferredMaxLayoutWidth:30.0];
+        [self.timeDue setPreferredMaxLayoutWidth:30.0];
     }
 
     return self;

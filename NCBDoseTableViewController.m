@@ -66,22 +66,24 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
-    NCBDoseNeededCell *cell;
+    NCBDoseGivenCell *cell;
 
     if (indexPath.section == 0) { // First section is for needs to be given cells
-        cell = [tableView dequeueReusableCellWithIdentifier:@"DoseNeeded" forIndexPath:indexPath];
+        cell = [tableView dequeueReusableCellWithIdentifier:@"DoseGiven" forIndexPath:indexPath];
         cell.patientLabel.text = @"Benjamin";
         cell.drugLabel.text = @"Tylenol";
         cell.drugDoseLabel.text = @"100 mg";
-        cell.timeLabel.text = @"1700";
+        cell.timeDue.text = @"1700";
+        cell.timeGiven.text = @"1700";
 
     } else { // Seccond section is for given cells
         //       NCBDoseGivenCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DoseGiven" forIndexPath:indexPath];
-        cell = [tableView dequeueReusableCellWithIdentifier:@"DoseNeeded" forIndexPath:indexPath]; // placeholder during dev
+        cell = [tableView dequeueReusableCellWithIdentifier:@"DoseGiven" forIndexPath:indexPath]; // placeholder during dev
         cell.patientLabel.text = @"John Jacob Jingleheime Schmidt";
         cell.drugLabel.text = @"Bennadryl!";
         cell.drugDoseLabel.text = @"60 mg";
-        cell.timeLabel.text = @"1500";
+        cell.timeDue.text = @"1500";
+        cell.timeGiven.text = @"1500";
 
     }
 
@@ -101,9 +103,9 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *reuseidentifer = @"DoseNeeded";
 
-    NCBDoseNeededCell *cell = [self.offscreencells objectForKey:reuseidentifer];
+    NCBDoseGivenCell *cell = [self.offscreencells objectForKey:reuseidentifer];
     if (cell == nil) {
-        cell = [tableView dequeueReusableCellWithIdentifier:@"DoseNeeded"];
+        cell = [tableView dequeueReusableCellWithIdentifier:@"DoseGiven"];
         [self.offscreencells setObject:cell forKey:reuseidentifer];
     }
 
@@ -112,14 +114,15 @@
         cell.patientLabel.text = @"Benjamin";
         cell.drugLabel.text = @"Tylenol";
         cell.drugDoseLabel.text = @"100 mg";
-        cell.timeLabel.text = @"1700";
+        cell.timeDue.text = @"1700";
+        cell.timeGiven.text = @"1700";
 
     } else { // Seccond section is for given cells
         cell.patientLabel.text = @"John Jacob Jingleheime Schmidt";
         cell.drugLabel.text = @"Bennadryl!";
         cell.drugDoseLabel.text = @"60 mg";
-        cell.timeLabel.text = @"1500";
-        
+        cell.timeDue.text = @"1500";
+        cell.timeGiven.text = @"1500";
     }
 
 

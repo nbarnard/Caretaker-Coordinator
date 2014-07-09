@@ -13,7 +13,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *patientLabel;
 @property (nonatomic, weak) IBOutlet UILabel *drugLabel;
 @property (nonatomic, weak) IBOutlet UILabel *drugDoseLabel;
-@property (nonatomic, weak) IBOutlet UILabel *timeLabel;
+@property (nonatomic, weak) IBOutlet UILabel *timeDue;
 
 
 @end

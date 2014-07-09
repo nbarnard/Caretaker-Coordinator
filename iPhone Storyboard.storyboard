@@ -28,14 +28,14 @@
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="84" placeholderIntrinsicHeight="20" text="Time Due" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" preferredMaxLayoutWidth="84" translatesAutoresizingMaskIntoConstraints="NO" id="B4U-aH-MOi" customClass="BNRDynamicTypeManagedLabel">
-                                            <rect key="frame" x="183" y="8" width="84" height="20"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="170" placeholderIntrinsicHeight="17" text="Drug Name" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="170" translatesAutoresizingMaskIntoConstraints="NO" id="Xb8-7K-aX8" customClass="BNRDynamicTypeManagedLabel">
+                                            <rect key="frame" x="63" y="55" width="170" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="170" placeholderIntrinsicHeight="17" text="Drug Name" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="170" translatesAutoresizingMaskIntoConstraints="NO" id="Xb8-7K-aX8" customClass="BNRDynamicTypeManagedLabel">
-                                            <rect key="frame" x="63" y="55" width="170" height="17"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="84" placeholderIntrinsicHeight="20" text="Time Due" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" preferredMaxLayoutWidth="84" translatesAutoresizingMaskIntoConstraints="NO" id="B4U-aH-MOi" customClass="BNRDynamicTypeManagedLabel">
+                                            <rect key="frame" x="183" y="8" width="84" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="highlightedColor"/>
@@ -69,7 +69,6 @@
                                         <constraint firstItem="lUW-uS-uau" firstAttribute="top" secondItem="XYV-ds-JY2" secondAttribute="bottom" priority="749" constant="8" symbolic="YES" id="XpR-Bu-Jf1" userLabel="V Patient Name - Checkmark Space"/>
                                         <constraint firstItem="lUW-uS-uau" firstAttribute="bottom" secondItem="Xb8-7K-aX8" secondAttribute="bottom" id="kaf-9m-vYz" userLabel="V Bottom Alignment - Button - Dynamic Type Managed Label - Drug Name"/>
                                         <constraint firstItem="Xb8-7K-aX8" firstAttribute="top" secondItem="XYV-ds-JY2" secondAttribute="bottom" priority="749" constant="8" symbolic="YES" id="oco-0K-9cT" userLabel="V Patient Name-Drug Name Vertical Space"/>
-                                        <constraint firstItem="XYV-ds-JY2" firstAttribute="baseline" secondItem="B4U-aH-MOi" secondAttribute="baseline" id="qGF-58-mHO" userLabel="B Patient Name-Time Due Baseline"/>
                                         <constraint firstItem="B4U-aH-MOi" firstAttribute="top" secondItem="XJC-uP-fP2" secondAttribute="top" constant="8" id="uVb-JW-hBe" userLabel="VTime Due Top Space"/>
                                         <constraint firstItem="lUW-uS-uau" firstAttribute="leading" secondItem="XJC-uP-fP2" secondAttribute="leading" constant="20" symbolic="YES" id="w8k-Yb-8lN" userLabel="L Checkmark Leading Space"/>
                                         <constraint firstItem="fq0-o3-6z4" firstAttribute="top" secondItem="B4U-aH-MOi" secondAttribute="bottom" priority="749" constant="8" symbolic="YES" id="x49-Cy-KEQ" userLabel="V Time Due-Drug Dose Vertical Space"/>
@@ -80,7 +79,73 @@
                                     <outlet property="drugDoseLabel" destination="fq0-o3-6z4" id="KFf-jy-DPx"/>
                                     <outlet property="drugLabel" destination="Xb8-7K-aX8" id="BWX-f6-dzy"/>
                                     <outlet property="patientLabel" destination="XYV-ds-JY2" id="TlL-DD-YUi"/>
-                                    <outlet property="timeLabel" destination="B4U-aH-MOi" id="SW8-vO-vlp"/>
+                                    <outlet property="timeDue" destination="B4U-aH-MOi" id="rlp-3u-paz"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" horizontalHuggingPriority="750" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="60" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DoseGiven" id="JHW-PN-9cA" userLabel="Dose Given Cell - DoseGiven" customClass="NCBDoseGivenCell">
+                                <rect key="frame" x="0.0" y="167" width="320" height="81"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="287" placeholderIntrinsicHeight="80" tableViewCell="JHW-PN-9cA" id="QdX-mq-pvw">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="155" placeholderIntrinsicHeight="20" text="Patient Name" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="167" translatesAutoresizingMaskIntoConstraints="NO" id="32x-az-87n">
+                                            <rect key="frame" x="20" y="8" width="167" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="84" placeholderIntrinsicHeight="20" text="Time Due" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" preferredMaxLayoutWidth="84" translatesAutoresizingMaskIntoConstraints="NO" id="uUI-Da-kbk" customClass="BNRDynamicTypeManagedLabel">
+                                            <rect key="frame" x="195" y="52" width="84" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="120" placeholderIntrinsicHeight="17" text="Drug Name" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="120" translatesAutoresizingMaskIntoConstraints="NO" id="K4R-Ai-Kxh" customClass="BNRDynamicTypeManagedLabel">
+                                            <rect key="frame" x="20" y="55" width="120" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="84" placeholderIntrinsicHeight="20" text="Time Given" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" preferredMaxLayoutWidth="84" translatesAutoresizingMaskIntoConstraints="NO" id="rbA-2y-XkX" userLabel="Dynamic Type Managed Label - Time Given" customClass="BNRDynamicTypeManagedLabel">
+                                            <rect key="frame" x="195" y="8" width="84" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="50" placeholderIntrinsicHeight="17" text="Drug Dose" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsn-hG-UVf" customClass="BNRDynamicTypeManagedLabel">
+                                            <rect key="frame" x="144" y="55" width="50" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="uUI-Da-kbk" secondAttribute="bottom" constant="8" id="4EQ-MT-XbH"/>
+                                        <constraint firstAttribute="trailing" secondItem="rbA-2y-XkX" secondAttribute="trailing" constant="8" id="4aq-Ja-aNg"/>
+                                        <constraint firstAttribute="bottom" secondItem="fsn-hG-UVf" secondAttribute="bottom" constant="8" id="4sY-YS-99c"/>
+                                        <constraint firstItem="fsn-hG-UVf" firstAttribute="leading" secondItem="K4R-Ai-Kxh" secondAttribute="trailing" constant="4" id="7an-GG-G3O"/>
+                                        <constraint firstItem="rbA-2y-XkX" firstAttribute="top" secondItem="QdX-mq-pvw" secondAttribute="top" constant="8" id="98P-WP-oDo"/>
+                                        <constraint firstItem="uUI-Da-kbk" firstAttribute="top" secondItem="rbA-2y-XkX" secondAttribute="bottom" priority="749" constant="8" symbolic="YES" id="Ekm-Zi-gH8"/>
+                                        <constraint firstItem="fsn-hG-UVf" firstAttribute="baseline" secondItem="uUI-Da-kbk" secondAttribute="baseline" priority="999" id="GQ5-xO-cty"/>
+                                        <constraint firstItem="fsn-hG-UVf" firstAttribute="baseline" secondItem="K4R-Ai-Kxh" secondAttribute="baseline" id="Sto-il-XP0"/>
+                                        <constraint firstAttribute="trailing" secondItem="uUI-Da-kbk" secondAttribute="trailing" constant="8" id="VMK-8E-1Lo"/>
+                                        <constraint firstItem="K4R-Ai-Kxh" firstAttribute="top" secondItem="32x-az-87n" secondAttribute="bottom" priority="749" constant="8" symbolic="YES" id="XLb-8M-Iz1" userLabel="V Patient Name-Drug Name Vertical Space"/>
+                                        <constraint firstItem="K4R-Ai-Kxh" firstAttribute="leading" secondItem="QdX-mq-pvw" secondAttribute="leading" constant="20" symbolic="YES" id="bkt-zV-HwB"/>
+                                        <constraint firstItem="rbA-2y-XkX" firstAttribute="leading" secondItem="32x-az-87n" secondAttribute="trailing" constant="8" symbolic="YES" id="dXj-e6-BX9"/>
+                                        <constraint firstItem="uUI-Da-kbk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fsn-hG-UVf" secondAttribute="trailing" priority="750" constant="8" symbolic="YES" id="diV-7s-ZtZ"/>
+                                        <constraint firstItem="fsn-hG-UVf" firstAttribute="top" secondItem="32x-az-87n" secondAttribute="bottom" priority="749" constant="8" symbolic="YES" id="lDx-gA-xpG"/>
+                                        <constraint firstItem="32x-az-87n" firstAttribute="leading" secondItem="QdX-mq-pvw" secondAttribute="leading" constant="20" symbolic="YES" id="rfb-jN-SGT" userLabel="H Patient Name Leading Space"/>
+                                        <constraint firstItem="32x-az-87n" firstAttribute="top" secondItem="QdX-mq-pvw" secondAttribute="top" constant="8" id="vwx-xn-6nz" userLabel="V Patient Name Top Space"/>
+                                        <constraint firstAttribute="bottom" secondItem="K4R-Ai-Kxh" secondAttribute="bottom" constant="8" id="yfB-NV-MwM" userLabel="V Drug Name Bottom Space"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="drugDoseLabel" destination="fsn-hG-UVf" id="DAi-ey-AD1"/>
+                                    <outlet property="drugLabel" destination="K4R-Ai-Kxh" id="Nad-tv-eXH"/>
+                                    <outlet property="patientLabel" destination="32x-az-87n" id="MAY-sg-KLK"/>
+                                    <outlet property="timeDue" destination="uUI-Da-kbk" id="wt5-H1-Nsq"/>
+                                    <outlet property="timeGiven" destination="rbA-2y-XkX" id="cNz-CX-ul5"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

@@ -10,4 +10,6 @@
 
 @interface NCBDoseGivenCell : NCBDoseCell
 
+@property (weak, nonatomic) IBOutlet UILabel *timeGiven;
+
 @end
